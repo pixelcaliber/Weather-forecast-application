@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <title>Weather Aplication</title>
+</head>
+
+<body style="text-align:center; background-color:rgba(245, 245, 245, 0.753);">
+
+    <script>
+        function validateForm() {
+          var x = document.forms["myForm"]["cityname"].value;
+          if (x == "" || x == null) {
+            alert("City Name must be filled out!!");
+            return false;
+          }
+        }
+        </script>
+    <h1 style=" color: rgb(4, 151, 151);font-family: 'Merienda', cursive; padding:10px 50px; padding:50px 30px 30px">Weather forecast
+        Application.</h1>
+        <form name="myForm"  action="/" onsubmit="return validateForm()" method="post"  required>
+        <label for="cityinput">City Name: </label>
+        <input id="cityinput" type="text" name="cityname">
+        <button type="submit">Go!!</button>
+    </form>
+
+</body>
+
+</html>
